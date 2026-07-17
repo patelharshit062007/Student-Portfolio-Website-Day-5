@@ -112,22 +112,12 @@ nav{
 @media (max-width:768px){
 
     .menu-icon{
-        display:block;
-        font-size:30px;
-        color:#fff;
-        cursor:pointer;
-    }
-
-    nav{
-        position:absolute;
-        top:70px;
-        left:0;
-        width:100%;
-        background:#111827;
-        display:none;
-        flex-direction:column;
-        text-align:center;
-    }
+    display:block;
+    font-size:24px;   /* Pehle 30px tha */
+    color:#fff;
+    cursor:pointer;
+    padding:5px;
+}
 
     #menu:checked ~ nav{
         display:flex;
