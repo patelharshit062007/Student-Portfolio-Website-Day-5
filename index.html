@@ -1,102 +1,415 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Harshit Patel | Portfolio</title>
-  <!-- Google Fonts import kiya hai premium look ke liye -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Harshit Patel | Frontend Developer</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
+
 <body>
 
-  <!-- ================= HEADER / NAVBAR ================= -->
-  <nav class="navbar">
-    <div class="logo">Portfolio</div>
+<!--=========================
+HEADER
+==========================-->
 
-    <!-- Mobile Hamburger Menu Button -->
-    <div class="menu-btn" id="mobile-menu">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
+<header>
+
+<div class="logo">
+    Harshit.
+</div>
+
+<input type="checkbox" id="menu">
+
+<label for="menu" class="menu-btn">
+
+<i class="fa-solid fa-bars"></i>
+
+</label>
+
+<nav>
+
+<a href="#home">Home</a>
+
+<a href="#about">About</a>
+
+<a href="#skills">Skills</a>
+
+<a href="#projects">Projects</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+<!--=========================
+HOME
+==========================-->
+
+<section class="hero" id="home">
+
+<div class="hero-text">
+
+<h3>Hello, I'm</h3>
+
+<h1>Harshit Patel</h1>
+
+<h2>Frontend Developer</h2>
+
+<p>
+
+I create modern, responsive and beautiful websites
+using HTML, CSS and JavaScript.
+
+</p>
+
+<div class="hero-btn">
+
+<a href="#projects" class="btn1">
+
+View Projects
+
+</a>
+
+<a href="#contact" class="btn2">
+
+Contact Me
+
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<div class="image-card">
+
+<img src="images/developer.png" alt="Developer">
+
+<div class="status">
+
+<span></span>
+
+Available for Work
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!--=========================
+ABOUT
+==========================-->
+
+<section class="about" id="about">
+
+<div class="title">
+
+<h4>ABOUT ME</h4>
+
+<h2>Who Am I?</h2>
+
+</div>
+
+<div class="about-container">
+
+<div class="about-card">
+
+<i class="fa-solid fa-code"></i>
+
+<h3>Web Development</h3>
+
+<p>
+
+I build responsive and modern websites with
+clean code and attractive UI.
+
+</p>
+
+</div>
+
+<div class="about-card">
+
+<i class="fa-solid fa-mobile-screen"></i>
+
+<h3>Responsive Design</h3>
+
+<p>
+
+Every website works perfectly on
+Desktop, Tablet and Mobile.
+
+</p>
+
+</div>
+
+<div class="about-card">
+
+<i class="fa-solid fa-palette"></i>
+
+<h3>UI Design</h3>
+
+<p>
+
+Premium interfaces with modern
+glassmorphism and gradients.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Skills Start In Part 2 -->
+  <!--=========================
+SKILLS
+==========================-->
+
+<section class="skills" id="skills">
+
+    <div class="title">
+
+        <h4>MY SKILLS</h4>
+
+        <h2>Technologies I Use</h2>
+
     </div>
 
-    <!-- Navigation Menu Links -->
-    <ul class="nav-links" id="nav-list">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <div class="skills-container">
 
-  <!-- ================= HERO SECTION ================= -->
-  <section id="home" class="hero-section">
-    <div class="hero-container">
-      
-      <!-- Left Box: Text Content -->
-      <div class="hero-content">
-        <p class="greeting">👋 Hello, I'm</p>
-        <h1 class="name">Harshit Patel</h1>
-        <h2 class="title">Frontend Developer</h2>
-        <p class="description">
-          I design and build modern, responsive and premium websites with clean UI, smooth animations and beautiful user experiences.
-        </p>
-        
-        <div class="cta-buttons">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
-          <a href="#contact" class="btn btn-secondary">Let's Talk</a>
+        <div class="skill-card">
+            <i class="fa-brands fa-html5"></i>
+            <h3>HTML5</h3>
         </div>
-        
-        <div class="tags">
-          <span>HTML5</span>
-          <span>CSS3</span>
-          <span>Responsive UI Design</span>
-        </div>
-      </div>
 
-      <!-- Right Box: Profile Image Wrapper -->
-      <div class="hero-image-wrapper">
-        <div class="image-box">
-          <!-- Aap apni original image ka path src="" me daal sakte hain -->
-          <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Harshit Patel Profile">
+        <div class="skill-card">
+            <i class="fa-brands fa-css3-alt"></i>
+            <h3>CSS3</h3>
         </div>
-      </div>
+
+        <div class="skill-card">
+            <i class="fa-brands fa-js"></i>
+            <h3>JavaScript</h3>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-brands fa-github"></i>
+            <h3>GitHub</h3>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-solid fa-mobile-screen"></i>
+            <h3>Responsive</h3>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-solid fa-laptop-code"></i>
+            <h3>UI / UX</h3>
+        </div>
 
     </div>
-  </section>
 
-  <!-- ================= DUMMY SECTIONS FOR SCROLLING CHECK ================= -->
-  <section id="skills" style="background: #12121c; padding: 100px 8%; height: 100vh;">
-    <h2 style="font-size: 40px; color: #fff;">My Skills</h2>
-  </section>
+</section>
 
-  <section id="projects" style="background: #0f0f16; padding: 100px 8%; height: 100vh;">
-    <h2 style="font-size: 40px; color: #fff;">My Projects</h2>
-  </section>
+<!--=========================
+PROJECTS
+==========================-->
 
-  <section id="contact" style="background: #12121c; padding: 100px 8%; height: 100vh;">
-    <h2 style="font-size: 40px; color: #fff;">Contact Me</h2>
-  </section>
+<section class="projects" id="projects">
 
-  <!-- ================= JAVASCRIPT (AUTO-CLOSE TRICK) ================= -->
-  <script>
-    const menuBtn = document.getElementById('mobile-menu');
-    const navList = document.getElementById('nav-list');
+    <div class="title">
 
-    // Hamburger Click Event to Open/Close Menu
-    menuBtn.addEventListener('click', () => {
-      navList.classList.toggle('active');
-      menuBtn.classList.toggle('open'); // Bars to X rotation effect
-    });
+        <h4>MY WORK</h4>
 
-    // Option Click Trigger to Automatic Close Menu Panels
-    document.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('click', () => {
-        navList.classList.remove('active');
-        menuBtn.classList.remove('open');
-      });
-    });
-  </script>
+        <h2>Featured Projects</h2>
+
+    </div>
+
+    <div class="projects-grid">
+
+        <!-- Project 1 -->
+
+        <div class="project-card">
+
+            <img src="images/project1.jpg" alt="Portfolio Website">
+
+            <div class="project-info">
+
+                <h3>Portfolio Website</h3>
+
+                <p>Modern responsive portfolio UI.</p>
+
+                <a href="#">View Project</a>
+
+            </div>
+
+        </div>
+
+        <!-- Project 2 -->
+
+        <div class="project-card">
+
+            <img src="images/project2.jpg" alt="Dashboard">
+
+            <div class="project-info">
+
+                <h3>UI / UX Dashboard</h3>
+
+                <p>Admin dashboard with modern interface.</p>
+
+                <a href="#">View Project</a>
+
+            </div>
+
+        </div>
+
+        <!-- Project 3 -->
+
+        <div class="project-card">
+
+            <img src="images/project3.jpg" alt="Landing Page">
+
+            <div class="project-info">
+
+                <h3>Business Landing Page</h3>
+
+                <p>Professional responsive landing page.</p>
+
+                <a href="#">View Project</a>
+
+            </div>
+
+        </div>
+
+        <!-- Project 4 -->
+
+        <div class="project-card">
+
+            <img src="images/project4.jpg" alt="E-Commerce">
+
+            <div class="project-info">
+
+                <h3>E-Commerce Website</h3>
+
+                <p>Shopping website with premium UI.</p>
+
+                <a href="#">View Project</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--=========================
+CONTACT
+==========================-->
+
+<section class="contact" id="contact">
+
+    <div class="title">
+
+        <h4>CONTACT</h4>
+
+        <h2>Let's Work Together</h2>
+
+    </div>
+
+    <form class="contact-form">
+
+        <input type="text" placeholder="Your Name" required>
+
+        <input type="email" placeholder="Your Email" required>
+
+        <input type="text" placeholder="Subject">
+
+        <textarea rows="6" placeholder="Your Message"></textarea>
+
+        <button type="submit">
+
+            Send Message
+
+        </button>
+
+    </form>
+
+</section>
+
+<!--=========================
+FOOTER
+==========================-->
+
+<footer>
+
+    <h2>Harshit.</h2>
+
+    <p>
+
+        Frontend Developer • UI Designer • Responsive Web Developer
+
+    </p>
+
+    <div class="social">
+
+        <a href="#"><i class="fab fa-github"></i></a>
+
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+
+        <a href="#"><i class="fab fa-instagram"></i></a>
+
+        <a href="#"><i class="fab fa-facebook"></i></a>
+
+    </div>
+
+    <p class="copy">
+
+        © 2026 Harshit Patel. All Rights Reserved.
+
+    </p>
+
+</footer>
+
+<!-- Menu Auto Close -->
+
+<script>
+
+const menu=document.getElementById("menu");
+
+document.querySelectorAll("nav a").forEach(link=>{
+
+link.onclick=()=>{
+
+menu.checked=false;
+
+};
+
+});
+
+</script>
+
 </body>
+
 </html>
