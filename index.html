@@ -237,6 +237,8 @@
             background: var(--bg-light);
             border-radius: 20px;
             transition: all 0.3s ease;
+            text-decoration: none;
+            cursor: pointer;
         }
 
         .section-nav-item:hover {
@@ -577,7 +579,6 @@
             </div>
         </div>
         <div class="hero-image">
-            <!-- 3D Developer Cartoon Avatar -->
             <div class="hero-image-circle">
                 <img src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg" alt="Developer Cartoon Avatar">
             </div>
@@ -586,30 +587,30 @@
 
     <!-- Section Navigation -->
     <div class="section-nav">
-        <div class="section-nav-item">
+        <a href="#about" class="section-nav-item">
             <svg viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11z"/>
             </svg>
             About
-        </div>
-        <div class="section-nav-item">
+        </a>
+        <a href="#skills" class="section-nav-item">
             <svg viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
             </svg>
             Skills
-        </div>
-        <div class="section-nav-item">
+        </a>
+        <a href="#projects" class="section-nav-item">
             <svg viewBox="0 0 24 24" fill="currentColor">
                 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zm-5.04-6.71l-2.75 3.54-1.3-1.54-4.29 5.71h12l-3.66-4.71z"/>
             </svg>
             Projects
-        </div>
-        <div class="section-nav-item">
+        </a>
+        <a href="#contact" class="section-nav-item">
             <svg viewBox="0 0 24 24" fill="currentColor">
                 <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/>
             </svg>
             Contact
-        </div>
+        </a>
     </div>
 
     <!-- About Section -->
@@ -673,11 +674,10 @@
                         <span class="tech-badge">CSS3</span>
                         <span class="tech-badge">JavaScript</span>
                     </div>
-                    <a href="#" class="project-link">View Project →</a>
+                    <a href="#contact" class="project-link">View Project →</a>
                 </div>
             </div>
 
-            <!-- E-Commerce Project with Code Image -->
             <div class="project-card">
                 <div class="project-image">
                     <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80" alt="E-Commerce Code Setup">
@@ -690,7 +690,7 @@
                         <span class="tech-badge">CSS3</span>
                         <span class="tech-badge">JavaScript</span>
                     </div>
-                    <a href="#" class="project-link">View Project →</a>
+                    <a href="#contact" class="project-link">View Project →</a>
                 </div>
             </div>
 
@@ -706,7 +706,7 @@
                         <span class="tech-badge">CSS3</span>
                         <span class="tech-badge">JavaScript</span>
                     </div>
-                    <a href="#" class="project-link">View Project →</a>
+                    <a href="#contact" class="project-link">View Project →</a>
                 </div>
             </div>
         </div>
@@ -749,7 +749,24 @@
     </footer>
 
     <script>
-        // Smooth active link highlighting
+        // Smooth scroll for all internal links (#)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                if (targetId !== '#') {
+                    e.preventDefault();
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+
+        // Highlight active navigation link on scroll
         const navLinks = document.querySelectorAll('nav a[href^="#"]');
         const sections = document.querySelectorAll('section');
 
@@ -758,8 +775,7 @@
 
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (window.scrollY >= sectionTop - 200) {
+                if (window.scrollY >= sectionTop - 150) {
                     current = section.getAttribute('id');
                 }
             });
@@ -774,13 +790,6 @@
 
         window.addEventListener('scroll', updateActiveLink);
         updateActiveLink();
-
-        // Keyboard navigation
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') {
-                // Extended menu logic
-            }
-        });
     </script>
 </body>
 </html>
