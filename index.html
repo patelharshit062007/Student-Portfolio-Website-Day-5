@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshit - Responsive Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR HEADER -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">HARSHIT<span>.</span></div>
+
+            <!-- Mobile Menu Toggle Hack -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <!-- Label wraps link so clicking option closes menu automatically -->
+                <li><label for="menu-toggle"><a href="#home">Home</a></label></li>
+                <li><label for="menu-toggle"><a href="#about">About</a></label></li>
+                <li><label for="menu-toggle"><a href="#projects">Projects</a></label></li>
+                <li><label for="menu-toggle"><a href="#contact">Contact</a></label></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <p class="greeting">// WELCOME TO MY PORTFOLIO</p>
+                    <h1>Hi, I'm <span class="highlight">Harshit</span></h1>
+                    <p class="role">Frontend Developer</p>
+                    <p class="intro">I engineer high-performance, visually polished, and responsive web experiences with clean architecture.</p>
+                    <a href="#projects" class="btn-primary">View Projects</a>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=600&q=80" alt="Developer working">
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="content-section">
+            <div class="section-container">
+                <span class="section-tag">01 / DISCOVER</span>
+                <h2>About Me</h2>
+                <p>Hello! I am a passionate front-end web developer. I love creating clean, structured, and interactive interfaces that provide great user experiences.</p>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="content-section">
+            <div class="section-container">
+                <span class="section-tag">02 / PORTFOLIO</span>
+                <h2>Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="card">
+                        <h3>Semantic Layout</h3>
+                        <p>A clean, structured HTML basic form blueprint focusing on semantics.</p>
+                    </div>
+                    <div class="card">
+                        <h3>UI/UX Styling</h3>
+                        <p>A fully optimized user interface form loaded with modern CSS styles.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Validation Node</h3>
+                        <p>A high-end registration layout backed with live validations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="content-section">
+            <div class="section-container">
+                <span class="section-tag">03 / CONNECT</span>
+                <h2>Get In Touch</h2>
+                <div class="contact-box">
+                    <p><strong>Email:</strong> patelharshit062007@gmail.com</p>
+                    <p><strong>Phone:</strong> +91 9328517842</p>
+                    <p><strong>Location:</strong> India</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 HARSHIT. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
